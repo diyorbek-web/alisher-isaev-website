@@ -40,11 +40,17 @@ const SalesProgram = () => {
 
     return (
         <div className="w-full space-y-8">
-            <h2 className="text-6xl font-bold text-center text-white uppercase">
-                <span className="text-success">Sales Doctor</span> <br />
-                <span className="text-success">Academy</span> Dasturi
-            </h2>
-            <div className="space-y-2">
+            <div>
+                <p className="text-center text-6xl text-white">
+                    <span className="text-success">SALES DOCTOR <br/>ACADEMY</span>
+                    DASTURI
+                </p>
+                <p className="mt-[17px] text-center text-[20px] font-normal text-white">
+                    Biznesingizni davolash uchun <span className="text-success">38 ta mavzudan <br/> iborat</span>
+                    maxsus dastur tayyorlangan
+                </p>
+            </div>
+            <div className="space-y-2 mt-[10px]">
                 {
                     items.map(item => {
                         return (
