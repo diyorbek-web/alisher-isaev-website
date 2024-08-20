@@ -37,11 +37,11 @@ const LessonAbout = () => {
           <div key={index}>
             <div className="w-full h-[1px] bg-white"></div>
             <div
-              className="flex  group font-semibold text-[24px]  justify-between items-center  cursor-pointer text-white p-4 bg-black-90  rounded"
+              className="flex justify-between group max-xs:font-medium  font-semibold max-xs:text-[18px] text-[24px] items-center  cursor-pointer text-white p-4 bg-black-90  rounded"
               onClick={() => handleToggle(index)}
             >
-              {item.title}
-              <div className="text-white flex group-hover:bg-white bg-success text-lg w-[40px] h-[40px]  rounded-full">
+              <div className="w-[80%]">{item.title}</div>
+              <div className="text-white flex group-hover:bg-white bg-success text-lg max-xs:w-[40px] max-xs:h-[40px] w-[40px] h-[40px]  rounded-full">
                 {activeIndex === index ? (
                   <span className="m-auto group-hover:text-black">-</span>
                 ) : (

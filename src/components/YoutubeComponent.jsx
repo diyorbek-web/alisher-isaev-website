@@ -19,13 +19,16 @@ const YoutubeComponent = () => {
   return (
     <div className="relative ">
       <div>
-        <p className="text-[40px] text-white">
+        <p className="max-xs:text-[30px] leading-snug text-[40px] text-white">
           Buning isbotini Tadbirkorlarning <br />
           <span className="text-success">Fikrlaridan bilib oling</span>
         </p>
       </div>
-      <div className="flex justify-between w-full mx-auto p-4">
-        <div className="w-[48%] cursor-pointer" onClick={openModal}>
+      <div className="flex flex-wrap justify-between w-full mx-auto p-4">
+        <div
+          className="max-xs:w-full  w-[48%] cursor-pointer"
+          onClick={openModal}
+        >
           <img
             src={youtuberasm}
             alt="Sample"
@@ -34,7 +37,7 @@ const YoutubeComponent = () => {
           <div className="mt-[30px] ">
             <div className="flex">
               <div className="">
-                <p className="mb-[10px] text-[25px] font-bold text-white ">
+                <p className="mb-[10px] max-xs:text-[20px] text-[25px] font-bold text-white ">
                   Xusan Mamasaidov
                 </p>
                 <span className="text-[15px] text-white">Decos, Mfaktor</span>
@@ -57,7 +60,10 @@ const YoutubeComponent = () => {
             </div>
           </div>
         </div>
-        <div className="w-[48%] cursor-pointer" onClick={openModal}>
+        <div
+          className="max-xs:w-full max-xs:mt-5 w-[48%] cursor-pointer"
+          onClick={openModal}
+        >
           <img
             src={youtuberasmtwo}
             alt="Sample"
@@ -66,7 +72,7 @@ const YoutubeComponent = () => {
           <div className="mt-[30px] ">
             <div className="flex">
               <div className="">
-                <p className="mb-[10px] text-[25px] font-bold text-white ">
+                <p className="mb-[10px] max-xs:text-[20px] text-[25px] font-bold text-white ">
                   Xayrulla Shokirov
                 </p>
                 <span className="text-[15px] text-white">AZN Fortuna</span>
@@ -90,7 +96,10 @@ const YoutubeComponent = () => {
           </div>
         </div>
       </div>
-      <div className="w-[48%] m-auto cursor-pointer" onClick={openModal}>
+      <div
+        className="max-xs:w-full max-xs:mt-1 w-[48%] m-auto cursor-pointer"
+        onClick={openModal}
+      >
         <img
           src={youtubethree}
           alt="Sample"
@@ -99,7 +108,7 @@ const YoutubeComponent = () => {
         <div className="mt-[30px] ">
           <div className="flex">
             <div className="">
-              <p className="mb-[10px] text-[25px] font-bold text-white ">
+              <p className="mb-[10px] max-xs:text-[20px] text-[25px] font-bold text-white ">
                 Doniyor Usmonov
               </p>
               <span className="text-[15px] text-white">Safopharm</span>

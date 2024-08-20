@@ -1,11 +1,12 @@
 import React from "react";
 import registration from "../assets/registration.png";
+import PhoneInput from "react-phone-input-2";
 
 const RegistrationForm = () => {
   return (
-    <div className="flex justify-between bg-[#1A1A1A] h-[420px] mt-[100px] border rounded-xl border-success ">
+    <div className="flex max-xs:flex-col-reverse max-xs:h-full justify-between bg-[#1A1A1A] h-[420px] mt-[100px] border rounded-xl border-success ">
       {/* Rasm qismi */}
-      <div className="w-2/5 rounded-l-xl  flex items-center justify-center">
+      <div className="max-xs:w-full max-xs:mb-[-50px] w-2/5 rounded-l-xl  flex items-center justify-center">
         <div className="absolute">
           <div className="relative top-[-35px] bg-success w-[250px] h-[250px]  rounded-full"></div>
         </div>
@@ -17,7 +18,7 @@ const RegistrationForm = () => {
       </div>
 
       {/* Form qismi */}
-      <div className="w-[50%] rounded-r-xl  flex flex-col justify-center p-10 mr-[50px]">
+      <div className="max-xs:w-full w-[50%] rounded-r-xl  flex flex-col justify-center p-10 mr-[50px]">
         <h2 className="text-3xl font-bold mb-8 text-white text-center">
           Siz bilan bog'lanishimiz uchun formani to'ldiring
         </h2>
@@ -31,25 +32,27 @@ const RegistrationForm = () => {
             />
           </div>
 
-          {/* Telefon raqam kiritish input */}
-          <div>
-            <div className="flex mt-1">
-              <span className="inline-flex items-center text-[20px] text-white px-3  bg-[#424242] rounded-l-3xl border-gray-300">
-                +998
-              </span>
-              <input
-                id="phone-input"
-                type="text"
-                placeholder="XX XXX XX XX"
-                className="focus:placeholder-opacity-100 text-white focus:placeholder-[#424242] p-2 h-[50px] w-full focus:outline-none bg-[#424242] rounded-r-3xl"
-                maxlength="9"
-                pattern="\d{9}"
-                inputMode="numeric"
-              />
-            </div>
-          </div>
+          <PhoneInput
+            country={"uz"}
+            inputStyle={{
+              backgroundColor: "#424242",
+              color: "white",
+              height: "50px",
+              padding: "8px",
+              borderRadius: "1.5rem",
+              border: "none",
+              width: "100%",
+            }}
+            buttonStyle={{
+              backgroundColor: "#424242",
+              color: "white",
+              borderRadius: "1.5rem",
+            }}
+            placeholderStyle={{
+              color: "#424242",
+            }}
+          />
 
-          {/* Biznes turi kiritish input */}
           <div>
             <input
               type="text"
@@ -58,7 +61,6 @@ const RegistrationForm = () => {
             />
           </div>
 
-          {/* Kursga yozilish tugmasi */}
           <div>
             <button
               type=""

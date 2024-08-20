@@ -60,16 +60,17 @@ function Table() {
   return (
     <div className="p-4">
       <div>
-        <p className="text-center text-[50px] font-bold text-success">
+        <p className="text-center max-xs:text-[35px] text-[50px] font-bold text-success">
           Bizda davolangan bizneslar
         </p>
-        <p className="text-white text-[20px] font-normal text-center">
-          Kurslarimizda turli soxa egalari qatnashib, oz <br />
+        <p className="text-white max-xs:text-[15px] text-[20px] font-normal text-center">
+          Kurslarimizda turli soxa egalari qatnashib, oz{" "}
+          <br className="max-xs:hidden" />
           bizneslarini yangi bosqichga olib chiqishga erishishdi
         </p>
       </div>
       <div className="mb-4 mt-[20px]">
-        <div className="flex ml-[60px] mb-[70px]">
+        <div className="max-xs:grid  max-xs:grid-cols-2 max-xs:gap-0 flex max-xs:m-0 ml-[60px] mb-[70px]">
           <div>
             <button
               onClick={() => setFilter("all")}
@@ -89,7 +90,7 @@ function Table() {
           <div>
             <button
               onClick={() => setFilter("ovqat")}
-              className={`px-4 py-2 text-white `}
+              className={` px-4 py-2 text-white `}
             >
               {" "}
               Oziq Ovqat
@@ -200,7 +201,7 @@ function Table() {
           </div>
         </div>
 
-        <div className="list-disc pl-5 grid gap-6 grid-cols-6">
+        <div className="list-disc max-xs:mt-5 pl-5 max-xs:gap-4 max-xs:grid-cols-4 grid gap-6 grid-cols-6">
           {filteredItems.map((item) => (
             <img key={item.id} src={item.img} className="" />
           ))}

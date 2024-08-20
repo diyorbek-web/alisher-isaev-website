@@ -16,8 +16,8 @@ import Footer from "./components/Footer.jsx";
 function App() {
   return (
     <div>
-      <div className="w-90 bg-[url('/src/assets/intro-background.png')] bg-no-repeat bg-contain bg-black-90">
-        <div className="max-w-5xl mx-auto p-8 space-y-28">
+      <div className="w-90  bg-[url('/src/assets/intro-background.png')] bg-no-repeat bg-contain bg-black-90">
+        <div className="max-xs:space-y-10 max-xs:w-[80%] max-xs:p-0 max-w-5xl mx-auto p-8 space-y-28">
           <div className="space-y-8">
             <Navbar />
             <Intro />
@@ -26,23 +26,31 @@ function App() {
           <Tittles />
           <Information />
           <Conference />
+        </div>
+      </div>
+      <div className="w-90   bg-contain bg-black-90">
+        <div className="max-xs:space-y-10 max-xs:w-[93%] max-xs:p-0 max-w-5xl mx-auto p-8 space-y-28">
           <SalesProgram />
+        </div>
+      </div>
+      <div className="w-90   bg-contain bg-black-90">
+        <div className="max-xs:space-y-10 max-xs:w-[80%] max-xs:p-0 max-w-5xl mx-auto p-8 space-y-28">
           <BookPage />
           <YoutubeComponent />
         </div>
       </div>
-      <div className="w-90 bg-contain bg-black">
-        <div className="max-w-5xl mx-auto p-8">
+      <div className="w-90   bg-contain bg-black-90">
+        <div className="max-xs:space-y-10 max-xs:w-[93%] max-xs:p-0 max-w-5xl mx-auto p-8 space-y-28">
           <Table />
         </div>
       </div>
+
       <div className="w-90 bg-contain bg-black-90">
         <div className="max-w-5xl mx-auto p-8">
           <RegistrationForm />
         </div>
       </div>
-      <div className="w-90 bg-contain bg-black-90 h-[50px] "></div>
-      <div className="w-90 bg-success h-[40px]">
+      <div className="w-90 bg-success max-xs:h-[80px] h-[40px]">
         <p className="font-bold text-white text-center text-[27px]">
           FAQAT SALES DOCTOR BITIRUVCHILARI UCHUN
         </p>
