@@ -64,8 +64,8 @@ const Tittles = () => {
           <div className="ml-[20px] ">
             <p className="text-[25px] text-white font-bold">Tadbirkor</p>
             <p className="text-[20px] max-xs:hidden font-thin text-white">
-              SalesDoctor, Milliard Club <br /> va RoboKidz brendlarining
-              asoschisi
+              SalesDoctor, Milliard Club <br className="max-xs:hidden" /> va
+              RoboKidz brendlarining asoschisi
             </p>
             <span className="block mb-2 text-white">
               SalesDoctor, Milliard Club
@@ -82,15 +82,18 @@ const Tittles = () => {
           return (
             <div className="w-[94%] max-xs:m-auto  border bg-[#E4FFF9] mt-5 rounded-xl">
               <div className="flex ml-[20px] mt-[10px]  ">
-                <img className="w-[110px] h-[110px]" src={item.img} />
-                <span className="font-bold text-[25px] mt-[20px] ml-[35px]">
+                <img
+                  className="max-xs:w-[80px] max-xs:h-[80px] w-[110px] h-[110px]"
+                  src={item.img}
+                />
+                <span className="font-bold max-xs:text-[20px] text-[25px] mt-[20px] ml-[35px]">
                   {item.name}
                 </span>
               </div>
               <div className="ml-[30px] font-normal text-[20px] w-[90%] h-[148px]">
                 {item.describtion}
               </div>
-              <div className="max-xs:mt-[30px] mt-[70px] mb-[50px] bg-success w-[238px] h-[23px] rounded-xl ml-[30px]"></div>
+              <div className="max-xs:mt-[30px] mt-[70px] mb-[50px] bg-success max-xs:w-[170px] w-[238px] max-xs:h-[17px] h-[23px] rounded-xl ml-[30px]"></div>
             </div>
           );
         })}

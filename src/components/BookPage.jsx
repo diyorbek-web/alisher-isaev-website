@@ -34,16 +34,17 @@ const BookPage = () => {
   return (
     <div className="max-xs:flex-col flex">
       <div>
-        <div className="relative max-xs:left-[0px] max-xs:w-[400px] max-xs:h-[400px] top-[40px] left-[-100px] text-white w-[600px] h-[600px] bg-gradient-radial rounded-full">
+        <div className="relative  max-xm:mb-4 max-xm:w-[300px] max-xm:h-[300px] max-xs:left-[0px] max-xs:w-[350px] max-xs:h-[350px] top-[40px] left-[-100px] text-white w-[600px] h-[600px] bg-gradient-radial rounded-full">
           <img
             src={kurskitob}
-            className="max-xs:w-[250px] max-xs:left-[70px] max-xs:top-[60px] max-xs:h-[250px] absolute w-[400px] h-[340px] left-[110px] top-[100px]"
+            className="max-xm:w-[200px] max-xm:left-[40px] max-xm:h-[200px] max-xs:w-[250px] max-xs:left-[70px] max-xs:top-[60px] max-xs:h-[250px] absolute w-[400px] h-[340px] left-[110px] top-[100px]"
           />
           <button className="max-xs:hidden absolute top-[500px] left-[170px] py-7 px-10 bg-success rounded-full uppercase text-white flex gap-2 tracking-wider">
             <span>Biznesni Davolash</span>
           </button>
         </div>
       </div>
+
       <div>
         <div>
           <p className="max-xs:text-[26px] text-4xl text-white">
