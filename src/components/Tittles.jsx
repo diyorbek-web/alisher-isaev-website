@@ -40,7 +40,7 @@ const Tittles = () => {
       img: balton,
       name: '<<DP "Balton Trading (Asia)>>"',
       describtion:
-        "(Nestle, Colgate-palmolive, Heinz, Shedroe-leto, Makfa, Impra, Oleina kabi brendlarning distribyutori) korxonasi raxbari lavozimida ishlagan",
+        "(Nestle, Colgate-palmolive, Heinz, Shedroe-leto, Makfa, Impra, Oleina kabi brendlarni",
     },
     {
       id: 6,
